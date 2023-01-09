@@ -343,7 +343,6 @@ function deactiveIcons() {
     }
 }
 
-//overloading display function to display passed invoices
 //this function is called when sorting is performed on the data
 function displaySortedData(data) {
     let tablebody = document.querySelector("#invoice_tbl tbody");
