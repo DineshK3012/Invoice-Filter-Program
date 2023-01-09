@@ -6,12 +6,12 @@ A basic filtering program to filter/sort invoices.
 -> The program is fetching all the invoice data from the JSON file named 'invoices.js' using fetch function and then passing it to a function to display the data on the invoice table in front-end.
 
 * Filtering Approach
--> To filter the program, added a onchange event listener is added to all the fields in the filter section which basically call a function named as 'filter'.
+-> To filter the data, added a onchange event listener to all the fields in the filter section which basically call a function named as 'filter'.
 
 * filter() function
 -> The function first takes all the values of the fields in the filter section to filter out the data. To filter out the data it basically add a class named as 'hide'(which basically sets its display property to none) to the unnecessary rows to show only the required rows. 
 
-Why hiding rows?
+* Why hiding rows?
 -> Because, in this approach we only have to add/remove a class to the rows and we save alot of time in rewriting the whole data from scratch in the table.
 
 * Sort Data According To Headers 
@@ -31,13 +31,13 @@ After sorting data the function passes the data into another function named 'dis
 * displaySortedData() function
 -> The function takes sorted data(object/array) and iterate through the data and rewrite all the invoices data in the table in the DOM according to the sorted data.
 
-* other function
+* Other Functions:
 
-** activeSortingOrder() 
+* activeSortingOrder() 
 -> This function takes two parameter 'col' which denotes the header and 'order' which denotes the ascending/descending icon.
 This function highlight the asc/desc icon by adding a class named 'active'(which basically sets the color of the icon).
 
 Example: activeSorrtingOrder(1, 1) which add a active class to the descending icon of the header 1(second header index started from 0).
 
-** deactiveIcons()
+* deactiveIcons()
 -> This function basically selects all the icon which are contains 'active' class and remove 'active' class from them one by one. This function is called when the sortData function is called.
