@@ -1,5 +1,5 @@
 # Invoice-Filter-Program
-A basic filtering program to filter/sort invoices. 
+This HTML, CSS, and JavaScript program allows users to filter and sort invoice data from a JSON file. The program includes functionality to filter invoices by begin date, due date, status, and in/out state, as well as sort the rows in ascending or descending order based on all columns. The JSON file serves as the data source for the program, providing the necessary information to populate the table and enable filtering and sorting. This program is ideal for users who need to manage a large number of invoices and require a reliable and efficient system for organizing and accessing this data.
 
 # Design Approach 
 * Getting Data from the file
